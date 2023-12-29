@@ -20,9 +20,6 @@ import NewSchemaOption from '../NewSchemaOption/NewSchemaOption';
         setArray(a);
         console.log(array,"mbmh")
     }
-
-    console.log(openIndex,"openIndex");
-
    
   return (
     <>
@@ -47,19 +44,7 @@ import NewSchemaOption from '../NewSchemaOption/NewSchemaOption';
                 </div>
                 {openIndex === index && <NewSchemaOption editNewSchema = {editNewSchema} element = {element}setOpenIndex = {setOpenIndex} />}
             </div>
-            {
-                 console.log(index,element,"llllll")
-            }
-            <div className='dash-icon' onClick={
-                ()=>{
-                    if(openIndex === index){
-                        // setOpenIndex(null)
-                    }
-                    else{
-                        // setOpenIndex(index)
-                        Schemaremove(index)
-                    }}
-                }><i class="fa fa-minus" ></i></div>
+            <div className='dash-icon' onClick={()=>{Schemaremove(index)}}><i class="fa fa-minus" ></i></div>
         </div>
         </>
         ))}
