@@ -1,0 +1,31 @@
+@import '../../common/colors.scss';
+.traits-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    .user-traits-wrapper{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .user-traits-bullet{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $user-traits-color;
+        margin-right: 5px;
+    }
+    .group-traits-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .group-traits-bullet{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $group-traits-color;
+        margin-right: 5px;
+    }
+}

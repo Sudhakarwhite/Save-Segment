@@ -1,0 +1,30 @@
+@import '../../common/colors.scss';
+.footer-container{
+    width: 100%;
+    margin-top: 210px;
+    height: 72px;
+    background-color: #e0dbdb;
+    display: flex;
+    align-items: center;
+}
+.popup-btn-wrapper{
+    margin-left: 20px;
+}
+.popup-save-btn{
+    cursor: pointer;
+    border: none;
+    padding: 8px 10px;
+    background-color: $save-btn-bg-color;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.popup-close-btn{
+    cursor: pointer;
+    border: none;
+    padding: 8px 10px;
+    color: $close-btn-color;
+    font-weight: bold;
+    background-color: $secondary-bg-color;
+    border-radius: 6px;
+}

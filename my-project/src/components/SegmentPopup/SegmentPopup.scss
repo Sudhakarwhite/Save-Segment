@@ -1,0 +1,46 @@
+@import '../../common/colors.scss';
+.segment-popup-container{
+    position: fixed;
+    height: 130vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: -40%;
+    background-color: rgba(0,0,0,0.6);
+    transition: all 0.5s ease-in-out;
+}
+.segment-popup-container .popup-hidden{
+    right: -100%;
+}
+// .segment-popup-container:not(.popup-hidden) {
+//     right: -20%; 
+//   }
+.segment-popup-form-container{
+    z-index: 1001;
+    box-sizing: border-box;
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    overflow: scroll;
+    background: $secondary-bg-color;
+    margin: auto;
+    top: 0;
+    right: 0;
+    @media only screen and (max-width: 1024px) {
+        width: 50%;
+	}
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+	}  
+}
+.segment-popup-form-container{
+    p{
+        text-align: justify;
+        margin: 0px 20px;
+        margin-bottom: 20px;
+        font-weight: 400;
+       @media only screen and (max-width: 491px) {
+          font-size: 14px;
+        }
+}
+}

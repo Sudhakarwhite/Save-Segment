@@ -1,0 +1,81 @@
+@import '../../common/colors.scss';
+.add-schema-container{
+    width: 100%;
+    position: relative;
+}
+.schema-dropdown-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    margin: 0px 20px;
+    .add-schema-bullet{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #bbbbbb;
+        margin-right: 10px;
+    }
+    
+}
+.add-schema-segment-flex{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    
+    span{
+        position: relative;
+        width: 100%;
+        padding: 5px 10px;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin-right: 5px;
+        color: black;
+        // background-color: $primary-bg-color;
+        border-color: black;
+        i{
+            position: absolute;
+            right: 0px;
+            color: green;
+            margin-top: 3px;
+        }
+    }
+    
+}
+.add-schema-text{
+    font-weight: 400;
+    color: $font-primary;
+}
+.dash-icon{
+    width: 34px;
+    height: 34px;
+    background-color: #9ce4db;
+    border-radius: 4px;
+    i{
+        display: inline-block;
+        border-radius: 50%;
+        color: #31618d;
+        margin-top: 6px;
+        margin-left: 9px;
+    }     
+}
+.add-new-schema{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    a{
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        color: green;
+    }
+}
+  
+
+
+

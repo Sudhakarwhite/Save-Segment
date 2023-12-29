@@ -1,0 +1,41 @@
+@import '../../common/colors.scss';
+.page-header-container{
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 0px 40px;
+    background-color: $primary-bg-color;
+
+    @media only screen and (max-width: 640px) {
+        padding: 20px;
+	}
+}
+.popup-header-container{
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 20px;
+    background-color: $primary-bg-color;
+
+    @media only screen and (max-width: 640px) {
+        padding: 20px;
+	}
+}
+i{
+    margin-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    @media only screen and (max-width: 640px) {
+        margin-right: 10px;
+    }
+
+}
+.page-header-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: $font-primary;
+    @media only screen and (max-width: 640px) {
+        margin: 10px;
+        font-size: 16px;
+    }
+}

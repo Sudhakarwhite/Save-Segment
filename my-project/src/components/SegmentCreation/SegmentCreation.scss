@@ -1,0 +1,57 @@
+@import '../../common/colors.scss';
+.about-segment-creation-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    @media only screen and (max-width: 770px) {
+        flex-direction: column;
+	}
+    @media only screen and (max-width: 640px) {
+        padding: 20px;
+	}
+}
+.left-section{
+    width: 50%;
+    @media only screen and (max-width: 770px) {
+        width: 100%;
+	}
+    h3{
+        font-size: 36px;
+        margin-bottom: 20px;
+        @media only screen and (max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+    p{
+        color: #3b3f47;
+        font-size: 20px;
+        @media only screen and (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+    .save-btn-container{
+        margin-top: 20px;
+        .save-segment-btn{
+            cursor: pointer;
+            background: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: $primary-bg-color;
+            font-size: 20px;
+            color: $font-primary;
+            font-weight: 600;
+        }
+    }
+}
+.right-section{
+    width: 50%;
+    @media only screen and (max-width: 770px) {
+        width: 100%;
+	}
+
+    img{
+        width: 100%;
+    }
+}
