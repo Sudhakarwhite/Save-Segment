@@ -18,12 +18,23 @@ const SegmentPopup = (props) => {
     const modalRef = useRef(null);
     useClickOutside(modalRef, onClose);
 
+console.log(array,"array");
+
+
     const addSchemaObject = () => {
       if(addSchema.length !== 0){
       setArray([...array, addSchema]);
       setAddSchema();
       }
     };
+
+    const Schemaremove = (index) => {
+      console.log("DeleteClickIndex",index);
+      const list = [...array]
+      list.splice(index,1)
+      setArray(list)
+      console.log(list,"list");
+    }
   return (
     <div className={`segment-popup-container ${openPopup ? "" : "popup-hidden"}`}>
       <form className='segment-popup-form-container' ref = {modalRef}>
@@ -31,7 +42,7 @@ const SegmentPopup = (props) => {
         <SegmentNameInput setInputData = {setInputData} inputData = {inputData} />
         <p>To save your segment, you need to add the schemas to build the query </p>
         <Traits />
-        <NewSchemaDropdown setArray = {setArray}array = {array}/>
+        <NewSchemaDropdown setArray = {setArray}array = {array} Schemaremove={Schemaremove}/>
         <SchemaDropdown addSchemaObject={addSchemaObject}  setAddSchema = {setAddSchema} array = {array} />
         <PopupFooter array = {array} inputData = {inputData} setOpenPopup = {setOpenPopup}/>
       </form>

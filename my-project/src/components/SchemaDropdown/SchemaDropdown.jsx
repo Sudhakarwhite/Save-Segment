@@ -7,16 +7,22 @@ const SchemaDropdown = (props) => {
     const array = props.array;
     const setAddSchema = props.setAddSchema;
     const addSchemaObject = props.addSchemaObject;
+    const Schemaremove =props.Schemaremove
     
     const popupOpen = ()=>{
         setOpenDropdown(!openDropdown);
     }
     const addObject = (object) => {
+        console.log(object,"objectobject");
         setAddSchema(object);
       };
       function closeDropdown(){
         setOpenDropdown(false)
       }
+
+      
+      
+     
   return (
 <>
     <div className='schema-dropdown-container'>
